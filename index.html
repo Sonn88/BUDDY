@@ -26,8 +26,9 @@
             <label for="name">Name your Buddy</label>
             <input type="text"id="name"name="name">
         </div>
-        <button> Name Ready</button>
+        <button id="namme"> Name Ready</button>
     </div>
+    <p></p>
     <div class="Buddy">
 
 
@@ -40,16 +41,23 @@
 
 </div>
 <script>
+    const place = document. querySelector("p")
     const buddy = document.querySelector("img")
     const lightb = document.getElementById('LightB');
     const purple = document.getElementById('Purple');
     const green = document. getElementById('Green');
     const yellow = document .getElementById('Yellow');
-    const name = document.getElementById('name')
+    const namme = document.getElementById('namme');
+    const Bname =document.createElement('h3')
+    const name= document.getElementById('name')
     lightb.addEventListener('click', function(e){
         buddy.src ='https://i.ytimg.com/vi/3rcmwOdhZg4/hqdefault.jpg';
+
     })
-    name.addEventListener('click', function(e))
+    name.addEventListener('click', function(e)){
+        Bname.innerHTML= name.value
+       place.appendChild(Bname)
+    })
 </script>
 </body>
 </html>
