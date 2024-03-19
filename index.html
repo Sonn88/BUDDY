@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make Buddy dance</title>
+</head>
+<style>
+
+</style>
+<link rel="stylesheet" href="style.css">
+<body>
+<div class="main">
+    <div class="info">
+        <h1 align="center"> Make Buddy</h1 >
+        <h3>Pick a color for Buddy</h3>
+        <div class="row">
+            <button id="LightB"> light Blue</button>
+            <button id="Purple"> Purple</button>
+            <button id="Green"> Green</button>
+            <button id="Yellow"> Yellow</button>
+
+        </div>
+
+        <br>
+        <div class="row">
+            <label for="name">Name your Buddy</label>
+            <input type="text"id="name"name="name">
+        </div>
+        <button> Name Ready</button>
+    </div>
+    <div class="Buddy">
+
+
+        <button> Buddy made</button>
+        *replace with buddy add a button that makes them dance
+        <div>
+            <img src="https://ih0.redbubble.net/image.5093513136.4076/raf,360x360,075,t,fafafa:ca443f4786.jpg" >
+        </div>
+    </div>
+
+</div>
+<script>
+    const buddy = document.querySelector("img")
+    const lightb = document.getElementById('LightB');
+    const purple = document.getElementById('Purple');
+    const green = document. getElementById('Green');
+    const yellow = document .getElementById('Yellow');
+    const name = document.getElementById('name')
+    lightb.addEventListener('click', function(e){
+        buddy.src ='https://i.ytimg.com/vi/3rcmwOdhZg4/hqdefault.jpg';
+    })
+    name.addEventListener('click', function(e))
+</script>
+</body>
+</html>

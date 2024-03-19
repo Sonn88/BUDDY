@@ -1,0 +1,29 @@
+.main{
+    max-width: 1600px;
+    max-height: 900px;
+    display: flex;
+
+
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+; justify-content: center
+
+}
+.info{
+    width: 500px;
+    height: 900px;
+    background-color: aqua;
+
+
+}
+label{
+    text-align: right;
+}
+.Buddy{
+    width: 600px;
+    height: 900px;
+    background-color: black;
+
