@@ -22,8 +22,12 @@
 label{
     text-align: right;
 }
-.Buddy{
+.Buddy {
     width: 600px;
     height: 900px;
     background-color: black;
+}
 
+button{
+    font-family: Georgia;
+}

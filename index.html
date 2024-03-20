@@ -26,37 +26,47 @@
             <label for="name">Name your Buddy</label>
             <input type="text"id="name"name="name">
         </div>
-        <button id="namme"> Name Ready</button>
+        <button id="ready"> Name Ready</button>
+        <p></p>
     </div>
-    <p></p>
+
+
     <div class="Buddy">
 
 
         <button> Buddy made</button>
         *replace with buddy add a button that makes them dance
         <div>
-            <img src="https://ih0.redbubble.net/image.5093513136.4076/raf,360x360,075,t,fafafa:ca443f4786.jpg" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cAt5x-r2j4L9n6JrT9TB1UXvj0JXPeY5lklZFsKDiIVrEJjD0a9b0EcaCacBkdVFOi0&usqp=CAU" style="width: 400px; height: 500px" >
         </div>
     </div>
 
 </div>
 <script>
-    const place = document. querySelector("p")
-    const buddy = document.querySelector("img")
+    const place = document. querySelector('p')
+    const buddy = document.querySelector('img')
     const lightb = document.getElementById('LightB');
     const purple = document.getElementById('Purple');
     const green = document. getElementById('Green');
     const yellow = document .getElementById('Yellow');
-    const namme = document.getElementById('namme');
-    const Bname =document.createElement('h3')
+    const ready = document.getElementById('ready');
+
     const name= document.getElementById('name')
-    lightb.addEventListener('click', function(e){
-        buddy.src ='https://i.ytimg.com/vi/3rcmwOdhZg4/hqdefault.jpg';
+
+
+    lightb.addEventListener('click',function(e){
+        buddy.src =`https://i.ytimg.com/vi/3rcmwOdhZg4/hqdefault.jpg`;
 
     })
-    name.addEventListener('click', function(e)){
+    purple.addEventListener('click', function (e){
+        buddy.src =`https://i.redd.it/ja54wl8lscib1.jpg`
+    })
+    const Bname =document.createElement('h3')
+    ready.addEventListener('click', function(e){
+
         Bname.innerHTML= name.value
-       place.appendChild(Bname)
+       place.appendChild(Bname);
+
     })
 </script>
 </body>
