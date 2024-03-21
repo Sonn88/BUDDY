@@ -10,14 +10,15 @@
 <link rel="stylesheet" href="style.css">
 <body>
 <div class="main">
-    <div class="info">
+    <div class="info" id="clear">
         <h1 align="center"> Make Buddy</h1 >
-        <h3>Pick a color for Buddy</h3>
+        <h2> Please make your buddy you get to choose what they look like after please name your buddy and click the made Buddy button. After that you will make your buddy dance .</h2>
+        <h3>Pick a design for Buddy</h3>
         <div class="row">
-            <button id="LightB"> light Blue</button>
-            <button id="Purple"> Purple</button>
-            <button id="Green"> Green</button>
-            <button id="Yellow"> Yellow</button>
+            <button id="normal"> normal</button>
+            <button id="Funny"> Funny</button>
+            <button id="girly"> Girly</button>
+            <button id="cool"> Cool</button>
 
         </div>
 
@@ -27,17 +28,20 @@
             <input type="text"id="name"name="name">
         </div>
         <button id="ready"> Name Ready</button>
-        <p></p>
+
     </div>
 
 
-    <div class="Buddy">
+    <div class="Buddy" id="clear">
 
 
-        <button> Buddy made</button>
+
         *replace with buddy add a button that makes them dance
         <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cAt5x-r2j4L9n6JrT9TB1UXvj0JXPeY5lklZFsKDiIVrEJjD0a9b0EcaCacBkdVFOi0&usqp=CAU" style="width: 400px; height: 500px" >
+            <p></p>
+            <img src="https://share.sketchpad.app/24/39c-5fee-0637e1.png" style="width: 500px; height: 600px" >
+
+            <button> Buddy made</button>
         </div>
     </div>
 
@@ -45,29 +49,42 @@
 <script>
     const place = document. querySelector('p')
     const buddy = document.querySelector('img')
-    const lightb = document.getElementById('LightB');
-    const purple = document.getElementById('Purple');
-    const green = document. getElementById('Green');
-    const yellow = document .getElementById('Yellow');
+    const funny = document.getElementById('Funny');
+   const normal = document.getElementById('normal')
     const ready = document.getElementById('ready');
 
     const name= document.getElementById('name')
+    normal.addEventListener('click', function (e){
+        buddy.src =`https://share.sketchpad.app/24/39c-5fee-0637e1.png`;
+    })
 
-
-    lightb.addEventListener('click',function(e){
-        buddy.src =`https://i.ytimg.com/vi/3rcmwOdhZg4/hqdefault.jpg`;
+    funny.addEventListener('click',function(e){
+        buddy.src =`https://share.sketchpad.app/24/fe5-4ca3-026223.png`;
 
     })
-    purple.addEventListener('click', function (e){
-        buddy.src =`https://i.redd.it/ja54wl8lscib1.jpg`
-    })
+
     const Bname =document.createElement('h3')
     ready.addEventListener('click', function(e){
 
-        Bname.innerHTML= name.value
+        Bname.innerHTML= ' This is your Buddy'+' '+name.value;
        place.appendChild(Bname);
 
     })
 </script>
 </body>
 </html>
+extra funny colors:
+  purple #AC49FF
+    green  #21AA36
+   red #AD1414
+  yellow  #F6EF6F
+    pink #E98ABE
+
+
+
+extra  normal colors:
+https://share.sketchpad.app/24/3fa-d24a-250a22.png green
+https://share.sketchpad.app/24/55c-461d-b8fce9.png purple
+https://share.sketchpad.app/24/fb1-b5bc-ca3cb2.png red
+https://share.sketchpad.app/24/e2d-726e-2a30bd.png yellow
+https://share.sketchpad.app/24/6ca-3f75-50d315.png pink

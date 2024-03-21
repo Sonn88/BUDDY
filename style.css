@@ -15,7 +15,7 @@
 .info{
     width: 500px;
     height: 900px;
-    background-color: aqua;
+    background-color:grey;
 
 
 }
@@ -30,4 +30,9 @@ label{
 
 button{
     font-family: Georgia;
+}
+p{
+    color: white;
+    text-align: center;
+    font-size: x-large;
 }
