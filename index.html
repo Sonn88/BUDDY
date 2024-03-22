@@ -21,7 +21,14 @@
             <button id="cool"> Cool</button>
 
         </div>
-
+        <h3>Pick a color</h3>
+        <div class="row">
+            <button id="purple">Purple</button>
+            <button id="green">Green</button>
+            <button id = yellow>Yellow</button>
+            <button id="pink">Pink</button>
+            <button id="red"> Red</button>
+        </div>
         <br>
         <div class="row">
             <label for="name">Name your Buddy</label>
@@ -32,11 +39,7 @@
     </div>
 
 
-    <div class="Buddy" id="clear">
-
-
-
-        *replace with buddy add a button that makes them dance
+    <div class="Buddy" >
         <div>
             <p></p>
             <img src="https://share.sketchpad.app/24/39c-5fee-0637e1.png" style="width: 500px; height: 600px" >
@@ -50,41 +53,41 @@
     const place = document. querySelector('p')
     const buddy = document.querySelector('img')
     const funny = document.getElementById('Funny');
-   const normal = document.getElementById('normal')
+    const normal = document.getElementById('normal')
+    const girly= document.getElementById('girly');
+    const cool = document.getElementById('cool');
+    const purple = document.getElementById('purple');
+    const green = document.getElementById('green');
     const ready = document.getElementById('ready');
 
     const name= document.getElementById('name')
     normal.addEventListener('click', function (e){
         buddy.src =`https://share.sketchpad.app/24/39c-5fee-0637e1.png`;
+
     })
 
     funny.addEventListener('click',function(e){
-        buddy.src =`https://share.sketchpad.app/24/fe5-4ca3-026223.png`;
+        buddy.src =`https://share.sketchpad.app/24/64d-5019-e20c4e.png`;
 
+    })
+    girly.addEventListener('click',function(e){
+        buddy.src=`https://share.sketchpad.app/24/965-955b-f32852.png`;
+    })
+    cool.addEventListener('click', function(e){
+        buddy.src=`https://share.sketchpad.app/24/5d4-e042-c768bc.png`;
     })
 
     const Bname =document.createElement('h3')
     ready.addEventListener('click', function(e){
 
         Bname.innerHTML= ' This is your Buddy'+' '+name.value;
-       place.appendChild(Bname);
+        place.appendChild(Bname);
 
     })
+
+    function Purple(){
+      if
+    }
 </script>
 </body>
 </html>
-extra funny colors:
-  purple #AC49FF
-    green  #21AA36
-   red #AD1414
-  yellow  #F6EF6F
-    pink #E98ABE
-
-
-
-extra  normal colors:
-https://share.sketchpad.app/24/3fa-d24a-250a22.png green
-https://share.sketchpad.app/24/55c-461d-b8fce9.png purple
-https://share.sketchpad.app/24/fb1-b5bc-ca3cb2.png red
-https://share.sketchpad.app/24/e2d-726e-2a30bd.png yellow
-https://share.sketchpad.app/24/6ca-3f75-50d315.png pink
