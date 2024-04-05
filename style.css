@@ -2,8 +2,7 @@
     max-width: 1600px;
     max-height: 900px;
     display: flex;
-
-
+    align-content: center;
 }
 
 .row {
@@ -36,4 +35,17 @@ p{
     color: white;
     text-align: center;
     font-size: x-large;
+}
+.start{
+    max-width: 2050px;
+    max-height: 1500px;
+    display:flex;
+    justify-content: center;
+
+
+}
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: lightsalmon;
 }
