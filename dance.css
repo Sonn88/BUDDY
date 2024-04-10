@@ -1,0 +1,19 @@
+.dance{
+    width: 900px;
+    height:400px;
+    background-color: black;
+}
+.floor{
+    width:1300px;
+    height:500px;
+ background-color: seagreen;
+    padding-left: 1000px;
+}
+.back{
+   max-width:1800px;
+    max-height: 1000px;
+    background-color: black;
+    align-self: center;
+
+
+}
