@@ -69,6 +69,7 @@
 
 </div>
 <script>
+
     const place = document. querySelector('p')
     const buddy = document.querySelector('img')
     const funny = document.getElementById('Funny');
@@ -86,16 +87,27 @@
     const shoes = document.getElementById('shoes');
     const tophat = document.getElementById('tophat');
 
+
     normal.addEventListener('click', function(e){
         buddy.src =`https://share.sketchpad.app/24/39c-5fee-0637e1.png`;
         stache.addEventListener('click', function(e){
-
+         buddy.src=``;
+            tophat.addEventListener('click', function(e){
+                buddy.src=`https://share.sketchpad.app/24/dfd-ab38-81990b.png  `
+            })
+            shoes.addEventListener('click',function(e){
+                buddy.src=`https://share.sketchpad.app/24/1bb-cab7-f23c72.png  `;)}
         })
         shoes.addEventListener('click',function(e){
-
+         buddy.src=`https://share.sketchpad.app/24/1bb-cab7-f23c72.png  `;
+            tophat.addEventListener('click', function(e){
+                buddy.src=`https://share.sketchpad.app/24/dfd-ab38-81990b.png  `
+            })
         })
         tophat.addEventListener('click', function(e){
-
+         buddy.src=`https://share.sketchpad.app/24/dfd-ab38-81990b.png  `
+            shoes.addEventListener('click',function(e){
+                buddy.src=`https://share.sketchpad.app/24/1bb-cab7-f23c72.png  `;)}
         })
         purple.addEventListener('click',function(e){
             buddy.src=`https://share.sketchpad.app/24/55c-461d-b8fce9.png `
@@ -124,6 +136,7 @@
         })
         green.addEventListener('click', function(e){
             buddy.src=`https://share.sketchpad.app/24/3fa-d24a-250a22.png`
+
             funny.addEventListener('click',function(e){
                 buddy.src=`https://share.sketchpad.app/24/78d-a682-ffe6e4.png `
             })
@@ -637,6 +650,7 @@
         place.appendChild(Bname);
 
     })
+
 
 
 

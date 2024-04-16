@@ -14,7 +14,7 @@
 .info{
     width: 600px;
     height: 900px;
-    background-color:grey;
+    background-color:#576d7b ;
 
 
 }
@@ -47,6 +47,7 @@ p{
 .box{
     height: 400px;
     width: 800px;
-    background-color: lightsalmon;
+    background-color: #576d7b;
+    align-self: center;
 
 }
