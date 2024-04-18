@@ -25,7 +25,7 @@
         </div>
         <h3>Pick buddy color</h3>
         <div class="row">
-            <button id="purple"> Purple</button>
+            <button id="purple" > Purple</button>
             <button id="green">Green</button>
             <button id="red">Red</button>
             <button id="yellow">Yellow</button>
@@ -81,7 +81,7 @@
     const green = document.getElementById('green');
     const red = document.getElementById('red');
     const yellow = document.getElementById('yellow');
-    const name= document.getElementById('name');
+    const Name= document.getElementById('name');
     const pink = document.getElementById('pink');
     const stache = document.getElementById('Muststache');
     const shoes = document.getElementById('shoes');
@@ -91,7 +91,7 @@
     normal.addEventListener('click', function(e){
         buddy.src =`https://share.sketchpad.app/24/39c-5fee-0637e1.png`;
         stache.addEventListener('click', function(e){
-         buddy.src=``;
+         buddy.src=`https://share.sketchpad.app/24/25c-9adb-6b77d7.png`;
             tophat.addEventListener('click', function(e){
                 buddy.src=`https://share.sketchpad.app/24/dfd-ab38-81990b.png  `
             })
@@ -103,6 +103,9 @@
          buddy.src=`https://share.sketchpad.app/24/1bb-cab7-f23c72.png  `
             tophat.addEventListener('click', function(e){
                 buddy.src=`https://share.sketchpad.app/24/dfd-ab38-81990b.png  `
+            })
+            stache.addEventListener('click',function (e){
+                buddy.src=`https://share.sketchpad.app/24/25c-9adb-6b77d7.png`
             })
         })
         tophat.addEventListener('click', function(e){
@@ -648,10 +651,11 @@
     const Bname =document.createElement('h3')
     ready.addEventListener('click', function(e){
 
-        Bname.innerHTML= ' This is your Buddy'+' '+name.value;
+        Bname.innerHTML= ' This is your Buddy'+' '+Name.value;
         place.appendChild(Bname);
 
     })
+
 
 
 
