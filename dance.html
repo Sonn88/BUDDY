@@ -14,26 +14,31 @@
 
 <body>
 <div class="back">
-
+    <button id="namme">Name</button>
+    <p></p>
     <div class="dance">
-    <button id="where"> Where is  your Buddy?</button>
+        <img src=""
+     <button id=" dance">Dance</button>
 
     </div>
 
     <div class="floor">
-       <img  alt="floor" style=" width:1300px; height: 500px;" >
+
 
     </div>
 
 </div>
-<script src="index.html"></script>
 <script>
-    const where= document.getElementById('where');
-    const Buddy = document.createElement('h3')
-    where.addEventListener('click', function (e){
-        Buddy.innerHTML='Here is your Buddy'+' '+ name.value;
-        place.appendChild(Buddy);
+
+    const button =document.getElementById('namme');
+    const buddyn =document.createElement('h1');
+    const  now = document.querySelector('p')
+    button.addEventListener('click',function (e){
+        buddyn.innerHTML='Hey';
+       now.appendChild(buddyn);
     })
+
+
 </script>
 </body>
 </html>
