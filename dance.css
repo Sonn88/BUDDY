@@ -4,10 +4,13 @@
     background-color: black;
 }
 .floor{
-    width:1300px;
+    width:1000px;
     height:500px;
- background-color: seagreen;
+background-image: url("https://share.sketchpad.app/24/003-2985-affa25.png");
+    background-repeat: no-repeat;
+    background-size: 2000px;
     padding-left: 1000px;
+
 }
 .back{
    max-width:1800px;
@@ -16,4 +19,7 @@
     align-self: center;
 
 
+}
+h1{
+    color: #d0d7dc;
 }
