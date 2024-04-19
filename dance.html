@@ -17,7 +17,7 @@
     <button id="namme">Name</button>
     <p></p>
     <div class="dance">
-        <img src=""
+
      <button id=" dance">Dance</button>
 
     </div>
@@ -32,9 +32,10 @@
 
     const button =document.getElementById('namme');
     const buddyn =document.createElement('h1');
+
     const  now = document.querySelector('p')
     button.addEventListener('click',function (e){
-        buddyn.innerHTML='Hey';
+        buddyn.innerHTML='Hey'+' '+ Name.value;
        now.appendChild(buddyn);
     })
 
