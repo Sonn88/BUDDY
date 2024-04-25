@@ -5,15 +5,15 @@
     <title>Make Buddy dance</title>
 
 </head>
-<script type="text/javascript" src="dance.html"></script>
+
 <style>
     body{
-        background-color: grey;
+        background-color: black;
     }
 </style>
 <link rel="stylesheet" href="style.css">
 <body>
-<div class="main">
+<div class="main" >
     <div class="info" id="clear">
         <h1 align="center"> Make Buddy</h1 >
         <h3>Pick a design for Buddy</h3>
@@ -53,23 +53,37 @@
             <label for="name">Name your Buddy</label><input type="text" id="name" name="name">
         </div>
         <br>
-        <button id="ready"> Name Ready</button>
 
-    </div>
-
-    <br>
-    <div class="Buddy" >
-        <div>
-            <p></p>
-            <img src="https://share.sketchpad.app/24/f26-e8d6-3ea096.png" alt="picture here" style="width: 500px; height: 600px" >
-
-            <br>
-            <a href="dance.html"><button>Buddy Made</button></a>
+        <div id="time">
+            <button id="dance" >Buddy Made</button>
         </div>
     </div>
 
+    <br>
+    <div class="space">
+
+    </div>
+    <div class="Buddy" >
+        <div>
+            <p></p>
+            <img src="https://share.sketchpad.app/24/f26-e8d6-3ea096.png" alt="picture here" style= "padding-left:100px; width: 400px; height: 500px; align-self: center" >
+
+            <br>
+
+
+        </div>
+    </div>
+
+
 </div>
+<div class="floor">
+    <p id="floor"></p>
+</div>
+
+
+
 <script>
+
 
     const place = document. querySelector('p')
     const buddy = document.querySelector('img')
@@ -77,7 +91,7 @@
     const normal = document.getElementById('normal')
     const girly= document.getElementById('girly');
     const cool = document.getElementById('cool');
-    const ready = document.getElementById('ready');
+    const floor =document.getElementById('floor')
     const purple = document.getElementById('purple');
     const green = document.getElementById('green');
     const red = document.getElementById('red');
@@ -87,12 +101,40 @@
     const stache = document.getElementById('Muststache');
     const shoes = document.getElementById('shoes');
     const tophat = document.getElementById('tophat');
+    const dance = document.getElementById('dance')
+    const remove = document.getElementById('clear')
+    const by = document.getElementById('time')
 
+    dance.addEventListener('click',function (e){
+        Bname.innerHTML= ' This is your Buddy'+' '+Name.value;
+        place.appendChild(Bname);
+        remove.remove();
+        by.remove();
+       let img = document.createElement('img')
+        img.src=`https://share.sketchpad.app/24/003-2985-affa25.png`
+        buddy.addEventListener('click',function(e){
+            NormalDanceone()
+            NormalDancetwo()
+            NormalDancethree()
+            FunnyDanceone()
+            FunnyDancetwo()
+            FunnyDancethree()
+            GirlyDanceone()
+            GirlyDancetwo()
+            GirlyDancethree
+            CoolDanceone()
+            CoolDancetwo()
+            CoolDancethree()
+        })
+         floor.appendChild(img);
 
+    })
     normal.addEventListener('click', function(e){
+
         buddy.src =`https://share.sketchpad.app/24/39c-5fee-0637e1.png`;
+        colorNormal()
         stache.addEventListener('click', function(e){
-         buddy.src=`https://share.sketchpad.app/24/25c-9adb-6b77d7.png`;
+            buddy.src=`https://share.sketchpad.app/24/25c-9adb-6b77d7.png`;
             tophat.addEventListener('click', function(e){
                 buddy.src=`https://share.sketchpad.app/24/dfd-ab38-81990b.png  `
             })
@@ -100,10 +142,10 @@
                 buddy.src = `https://share.sketchpad.app/24/1bb-cab7-f23c72.png`
             })
             colorNormal();
-            colors();
+
         })
         shoes.addEventListener('click',function(e){
-         buddy.src=`https://share.sketchpad.app/24/1bb-cab7-f23c72.png  `
+            buddy.src=`https://share.sketchpad.app/24/1bb-cab7-f23c72.png  `
             tophat.addEventListener('click', function(e){
                 buddy.src=`https://share.sketchpad.app/24/dfd-ab38-81990b.png  `
             })
@@ -112,7 +154,7 @@
             })
         })
         tophat.addEventListener('click', function(e){
-         buddy.src=`https://share.sketchpad.app/24/dfd-ab38-81990b.png  `
+            buddy.src=`https://share.sketchpad.app/24/dfd-ab38-81990b.png  `
             shoes.addEventListener('click',function(e){
                 buddy.src=`https://share.sketchpad.app/24/1bb-cab7-f23c72.png  `;
             })
@@ -130,7 +172,7 @@
         tophat.addEventListener('click', function(e){
 
         })
-        colors()
+
         colorFunny()
 
     })
@@ -145,7 +187,7 @@
         tophat.addEventListener('click', function(e){
 
         })
-        colors()
+
         colorGirly()
 
     })
@@ -160,216 +202,437 @@
         tophat.addEventListener('click', function(e){
 
         })
-        colors()
+
         colorCool()
 
     })
     const Bname =document.createElement('h3')
 
-    ready.addEventListener('click', function(e){
 
-        Bname.innerHTML= ' This is your Buddy'+' '+Name.value;
-        place.appendChild(Bname);
+    function PURPLE(){
 
-    })
- function colorNormal(){
-        purple.addEventListener('click',function (e){
-            buddy.src=`https://share.sketchpad.app/24/55c-461d-b8fce9.png `
+
+        funny.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/469-ab80-17f220.png`;
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
         })
-    green.addEventListener('click',function (e){
-        buddy.src=`https://share.sketchpad.app/24/3fa-d24a-250a22.png`
-     })
-     red.addEventListener('click',function (e){
-         buddy.src=`https://share.sketchpad.app/24/fb1-b5bc-ca3cb2.png `;
-     })
-     yellow.addEventListener('click',function (e){
-         buddy.src=`https://share.sketchpad.app/24/e2d-726e-2a30bd.png `;
-     })
-     pink.addEventListener('click',function (e){
-         buddy.src=`https://share.sketchpad.app/24/6ca-3f75-50d315.png `
-     })
+        girly.addEventListener('click', function(e){
+            buddy.src=`https://share.sketchpad.app/24/e27-3804-663e33.png `
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+        normal.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/55c-461d-b8fce9.png `
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+        cool.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/b91-2f74-bf40fe.png  `
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+
+
+
+    }
+
+
+
+    function GREEN(){
+
+
+
+        funny.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/78d-a682-ffe6e4.png `
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+        normal.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/3fa-d24a-250a22.png`
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+        girly.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/ffa-0029-6f5676.png`;
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+        cool.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/60d-67c8-3ac3a8.png`;
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+
+    }
+    function RED(){
+
+
+        normal.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/fb1-b5bc-ca3cb2.png `;
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+        funny.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/e19-b8bc-a28f63.png `
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+        girly.addEventListener('click', function (e){
+            buddy.src=`https://share.sketchpad.app/24/390-6658-22f19b.png`
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+        cool.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/c0f-9882-a78cad.png `
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+
+
+    }
+    function YELLOW(){
+
+
+
+        normal.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/e2d-726e-2a30bd.png `;
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+        funny.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/748-f038-143c18.png `;
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+        girly.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/e74-065f-72e0b8.png `;
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+        cool.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/c8d-6584-95bf7c.png  `;
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+
+
+
+    }
+
+    function PINK(){
+
+
+
+        normal.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/6ca-3f75-50d315.png `;
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+        funny.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/5fa-6cee-5ec4e8.png`;
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+        girly.addEventListener('click',function(e){
+            buddy.src=`https://share.sketchpad.app/24/fa2-d5ef-2e4580.png `;
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+        cool.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/698-ade6-51bc0a.png `;
+            stache.addEventListener('click', function(e){
+
+            })
+            shoes.addEventListener('click',function(e){
+
+            })
+            tophat.addEventListener('click', function(e){
+
+            })
+        })
+
+
+    }
+    function colorFunny(){
+
+        purple.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/469-ab80-17f220.png`;
+            PURPLE()
+        })
+        green.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/78d-a682-ffe6e4.png `;
+            GREEN()
+        })
+        red.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/e19-b8bc-a28f63.png`;
+            RED()
+        })
+        yellow.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/748-f038-143c18.png `;
+            YELLOW()
+        })
+        pink.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/5fa-6cee-5ec4e8.png `;
+            PINK()
+        })
+
+    }
+    function colorGirly(){
+
+        purple.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/e27-3804-663e33.png `;
+            PURPLE()
+        })
+        green.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/ffa-0029-6f5676.png`;
+            GREEN()
+        })
+        red.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/390-6658-22f19b.png`;
+            RED()
+        })
+        yellow.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/e74-065f-72e0b8.png `
+            YELLOW()
+        })
+        pink.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/fa2-d5ef-2e4580.png`
+            PINK()
+        })
+
+    }
+    function colorCool(){
+        purple.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/b91-2f74-bf40fe.png `;
+            PURPLE()
+        })
+        green.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/60d-67c8-3ac3a8.png `;
+            GREEN()
+        })
+        red.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/c0f-9882-a78cad.png `;
+            RED()
+        })
+        yellow.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/c8d-6584-95bf7c.png `;
+            YELLOW()
+        })
+        pink.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/698-ade6-51bc0a.png `;
+            PINK()
+        })
+
+    }
+
+    function colorNormal(){
+
+        purple.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/55c-461d-b8fce9.png`
+            PURPLE()
+
+        })
+        green.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/3fa-d24a-250a22.png`
+            GREEN()
+
+        })
+        red.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/fb1-b5bc-ca3cb2.png`;
+            RED()
+
+        })
+        yellow.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/e2d-726e-2a30bd.png`;
+            YELLOW()
+
+        })
+        pink.addEventListener('click',function (e){
+            buddy.src=`https://share.sketchpad.app/24/6ca-3f75-50d315.png`
+            PINK()
+
+        })
+
+    }
+ function NormalDanceone(){
+
  }
- function colors(){
+ function NormalDancetwo(){
 
-     purple.addEventListener('click',function(e){
-
-         funny.addEventListener('click',function(e){
-             buddy.src=`https://share.sketchpad.app/24/469-ab80-17f220.png`;
-         })
-         girly.addEventListener('click', function(e){
-             buddy.src=`https://share.sketchpad.app/24/e27-3804-663e33.png `
-         })
-         normal.addEventListener('click',function(e){
-             buddy.src=`https://share.sketchpad.app/24/55c-461d-b8fce9.png `
-         })
-         cool.addEventListener('click',function (e){
-             buddy.src=`https://share.sketchpad.app/24/b91-2f74-bf40fe.png  `
-         })
-         stache.addEventListener('click', function(e){
-
-         })
-         shoes.addEventListener('click',function(e){
-
-         })
-         tophat.addEventListener('click', function(e){
-
-         })
-
-     })
-     green.addEventListener('click', function(e){
-
-
-         funny.addEventListener('click',function(e){
-             buddy.src=`https://share.sketchpad.app/24/78d-a682-ffe6e4.png `
-         })
-         normal.addEventListener('click',function(e){
-             buddy.src=`https://share.sketchpad.app/24/3fa-d24a-250a22.png`
-         })
-         girly.addEventListener('click',function(e){
-             buddy.src=`https://share.sketchpad.app/24/ffa-0029-6f5676.png`;
-         })
-         cool.addEventListener('click',function(e){
-             buddy.src=`https://share.sketchpad.app/24/60d-67c8-3ac3a8.png`;
-         })
-         stache.addEventListener('click', function(e){
-
-         })
-         shoes.addEventListener('click',function(e){
-
-         })
-         tophat.addEventListener('click', function(e){
-
-         })
-     })
-     red.addEventListener('click',function (e){
-
-         normal.addEventListener('click',function (e){
-             buddy.src=`https://share.sketchpad.app/24/fb1-b5bc-ca3cb2.png `;
-         })
-         funny.addEventListener('click',function (e){
-             buddy.src=`https://share.sketchpad.app/24/e19-b8bc-a28f63.png `
-         })
-         girly.addEventListener('click', function (e){
-             buddy.src=`https://share.sketchpad.app/24/390-6658-22f19b.png `
-         })
-         cool.addEventListener('click',function (e){
-             buddy.src=`https://share.sketchpad.app/24/c0f-9882-a78cad.png `
-         })
-         stache.addEventListener('click', function(e){
-
-         })
-         shoes.addEventListener('click',function(e){
-
-         })
-         tophat.addEventListener('click', function(e){
-
-         })
-     })
-     yellow.addEventListener('click',function(e){
-
-         normal.addEventListener('click',function(e){
-             buddy.src=`https://share.sketchpad.app/24/e2d-726e-2a30bd.png `;
-         })
-         funny.addEventListener('click',function (e){
-             buddy.src=`https://share.sketchpad.app/24/748-f038-143c18.png `;
-         })
-         girly.addEventListener('click',function (e){
-             buddy.src=`https://share.sketchpad.app/24/e74-065f-72e0b8.png `;
-         })
-         cool.addEventListener('click',function (e){
-             buddy.src=`https://share.sketchpad.app/24/c8d-6584-95bf7c.png `;
-         })
-         stache.addEventListener('click', function(e){
-
-         })
-         shoes.addEventListener('click',function(e){
-
-         })
-         tophat.addEventListener('click', function(e){
-
-         })
-
-     })
-     pink.addEventListener('click',function(e){
-
-
-         normal.addEventListener('click',function (e){
-             buddy.src=`https://share.sketchpad.app/24/6ca-3f75-50d315.png `;
-         })
-         funny.addEventListener('click',function(e){
-             buddy.src=`https://share.sketchpad.app/24/5fa-6cee-5ec4e8.png`;
-         })
-         girly.addEventListener('click',function(e){
-             buddy.src=`https://share.sketchpad.app/24/fa2-d5ef-2e4580.png `;
-         })
-         cool.addEventListener('click',function (e){
-             buddy.src=`https://share.sketchpad.app/24/6c9-a526-609a2c.png `;
-         })
-         stache.addEventListener('click', function(e){
-
-         })
-         shoes.addEventListener('click',function(e){
-
-         })
-         tophat.addEventListener('click', function(e){
-
-         })
-     })
  }
- function colorFunny(){
-      purple.addEventListener('click',function (e){
-         buddy.src=`https://share.sketchpad.app/24/469-ab80-17f220.png`;
-     })
-    green.addEventListener('click',function (e){
-      buddy.src=`https://share.sketchpad.app/24/78d-a682-ffe6e4.png `;
-     })
-    red.addEventListener('click',function (e){
-     buddy.src=`https://share.sketchpad.app/24/e19-b8bc-a28f63.png`;
-     })
-    yellow.addEventListener('click',function (e){
-       buddy.src=`https://share.sketchpad.app/24/748-f038-143c18.png `;
-     })
-    pink.addEventListener('click',function (e){
-       buddy.src=`https://share.sketchpad.app/24/5fa-6cee-5ec4e8.png `;
-     })
- }
- function colorGirly(){
+ function NormalDancethree(){
 
-     purple.addEventListener('click',function (e){
-        buddy.src=`https://share.sketchpad.app/24/e27-3804-663e33.png `;
-     })
-     green.addEventListener('click',function (e){
-       buddy.src=`https://share.sketchpad.app/24/ffa-0029-6f5676.png`;
-     })
-     red.addEventListener('click',function (e){
-         buddy.src=`https://share.sketchpad.app/24/390-6658-22f19b.png`;
-     })
-     yellow.addEventListener('click',function (e){
-       buddy.src=`https://share.sketchpad.app/24/e74-065f-72e0b8.png `
-     })
-     pink.addEventListener('click',function (e){
-     buddy.src=`https://share.sketchpad.app/24/fa2-d5ef-2e4580.png`
-     })
  }
- function colorCool(){
-     purple.addEventListener('click',function (e){
-      buddy.src=`https://share.sketchpad.app/24/b91-2f74-bf40fe.png `;
-     })
-     green.addEventListener('click',function (e){
-      buddy.src=`https://share.sketchpad.app/24/60d-67c8-3ac3a8.png `;
-     })
-     red.addEventListener('click',function (e){
-      buddy.src=`https://share.sketchpad.app/24/c0f-9882-a78cad.png `;
-     })
-     yellow.addEventListener('click',function (e){
-      buddy.src=`https://share.sketchpad.app/24/748-f038-143c18.png `;
-     })
-     pink.addEventListener('click',function (e){
-      buddy.src=`https://share.sketchpad.app/24/5fa-6cee-5ec4e8.png `;
-     })
+ function FunnyDanceone(){
+
  }
+ function FunnyDancetwo(){
 
+    }
+  function FunnyDancethree(){
 
+    }
+    function GirlyDanceone(){
+
+    }
+    function GirlyDancetwo(){
+
+    }
+    function GirlyDancethree(){
+
+    }
+    function CoolDanceone(){
+
+    }
+    function CoolDancetwo(){
+
+    }
+    function CoolDancethree(){
+
+    }
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
