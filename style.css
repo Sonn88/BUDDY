@@ -1,6 +1,6 @@
 .main{
-    max-width: 1600px;
-    max-height: 900px;
+    width:100%;
+    height: 100%;
     display: flex;
     align-content: center;
 }
@@ -12,10 +12,11 @@
 
 }
 .info{
+    margin-left: 10%;
+    width: 25%;
+    height:700px;
 
-    width: 600px;
-    height: 900px;
-    background-color:#50604f ;
+    background-color:#455f45 ;
 
 
 }
@@ -23,10 +24,9 @@ label{
     text-align: right;
 }
 .Buddy {
-    width: 800px;
-    height: 600px;
+    width:200px;
+    height: 200px;
     background-color: black;
-    align-self:center ;
 }
 
 button{
@@ -39,7 +39,7 @@ p{
     font-size: x-large;
 }
 .start{
-    max-width: 2050px;
+    max-width:100%;
     max-height: 1500px;
     display:flex;
     justify-content: center;
@@ -47,26 +47,15 @@ p{
 
 }
 .box{
-    height: 500px;
-    width: 900px;
+    height: 400px;
+    width: 700px;
     background-color: black;
-    justify-self: center;
-
-
-}
-.blue{
-    max-height: 1000px;
-    max-width: 1900px;
-    justify-content: center;
-    display: compact;
-    margin: 100px;
-    border:5px solid seagreen;
-
-
+    border: 5px solid seagreen;
+    margin-left: 25%;
+    margin-top: 50px;
+    color: seagreen;
 
 }
 
-.floor{
-    height: 150px;
-    width: 100px;
-}
+
+
