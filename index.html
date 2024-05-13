@@ -6,12 +6,7 @@
 
 </head>
 <style>
-    #buddy{
-        width:300px;
-        height:200px
 
-
-    }
     body{
         background-color: black;
     }
@@ -35,8 +30,11 @@
         padding-top: 50px;
     }
     label{
-        font-size: large;
+        font-size: X-large;
         font-family: "Georgia";
+    }
+    .Extra{
+        padding-left: 50px;
     }
 </style>
 
@@ -64,7 +62,25 @@
             <button id="yellow">Yellow</button>
             <button id="pink">Pink</button>
         </div>
+      <div>
+          <h3>Extras:</h3>
+          <div class="Extra">
 
+              <input type="radio" name="extra" id="Mustache">
+              <label for="Mustache">Mustache</label>
+          </div>
+          <div class="Extra">
+
+              <input type="radio" name="extra" id="tophat">
+              <label for="tophat">Tophat</label>
+          </div>
+          <div class="Extra">
+
+              <input type="radio" name="extra" id="none">
+              <label for="none">None</label>
+          </div>
+      </div>
+        <br>
         <br>
         <div class="row">
             <label for="name">Name your Buddy</label><input type="text" id="name" name="name">
@@ -87,7 +103,7 @@
         <div>
 
 
-            <img  id = buddy src="https://share.sketchpad.app/24/f26-e8d6-3ea096.png" alt="picture here" style= "padding-left:100px; width: 400px; height: 500px; align-self: center" >
+            <img  id = buddy src="https://share.sketchpad.app/24/f26-e8d6-3ea096.png" alt="picture here" style= "padding-left:100px; width: 700px; height: 800px; align-self: center" >
 
             <br>
 
@@ -117,7 +133,7 @@
     const yellow = document.getElementById('yellow');
     const Name= document.getElementById('name');
     const pink = document.getElementById('pink');
-    const stache = document.getElementById('Muststache');
+    const stache = document.getElementById('Mustache');
     const none = document.getElementById("none");
     const tophat = document.getElementById('tophat');
     const dance = document.getElementById('dance')
@@ -127,12 +143,13 @@
     dance.addEventListener('click',function (e){
         Bname.innerHTML= ' This is your Buddy'+' '+Name.value;
         Bname.style.fontSize="35px"
-        buddy.style.height="600px"
-        buddy.style.width="500px"
+        buddy.style.height="825px"
+        buddy.style.width="725px"
+
         place.appendChild(Bname);
         remove.remove();
         by.remove();
-        document.getElementById("buddy").style.paddingLeft="500px"
+        document.getElementById("buddy").style.paddingLeft="350px"
 
 
     })
@@ -142,29 +159,61 @@
     })
     normal.addEventListener('click', function(e){
 
-        buddy.src =`https://share.sketchpad.app/24/39c-5fee-0637e1.png`;
+        buddy.src =`https://share.sketchpad.app/24/679-b524-765a56.png `;
+        stache.addEventListener('click', function(e){
 
+        })
+        none.addEventListener('click',function(e){
+            buddy.src =`https://share.sketchpad.app/24/679-b524-765a56.png `;
+        })
+        tophat.addEventListener('click', function(e){
+        buddy.src=` https://share.sketchpad.app/24/0f6-5b3d-120c68.png `
+        })
         colorNormal()
 
 
     })
 
     funny.addEventListener('click',function(e){
-        buddy.src=`https://share.sketchpad.app/24/a6e-ecb6-0621f4.png`;
-
+    buddy.src=` https://share.sketchpad.app/24/e50-a409-f828d0.png`
+        stache.addEventListener('click', function(e){
+       buddy.src=`https://share.sketchpad.app/24/331-8b61-9737e7.png  `
+        })
+        none.addEventListener('click',function(e){
+            buddy.src=` https://share.sketchpad.app/24/e50-a409-f828d0.png`
+        })
+        tophat.addEventListener('click', function(e){
+          buddy.src=`https://share.sketchpad.app/24/cee-a25e-ad2a3e.png  `
+        })
         colorFunny()
 
     })
     girly.addEventListener('click',function(e){
         buddy.src=`https://share.sketchpad.app/24/965-955b-f32852.png`;
+        stache.addEventListener('click', function(e){
 
+        })
+        none.addEventListener('click',function(e){
+
+        })
+        tophat.addEventListener('click', function(e){
+
+        })
 
         colorGirly()
 
     })
     cool.addEventListener('click', function(e){
         buddy.src=`https://share.sketchpad.app/24/964-61cb-289459.png`;
+        stache.addEventListener('click', function(e){
 
+        })
+        none.addEventListener('click',function(e){
+
+        })
+        tophat.addEventListener('click', function(e){
+
+        })
 
         colorCool()
 
@@ -176,15 +225,15 @@
 
 
         funny.addEventListener('click',function(e){
-            buddy.src=`https://share.sketchpad.app/24/469-ab80-17f220.png`;
+           buddy.src=`https://share.sketchpad.app/24/f1f-c3e2-c32c64.png `
             stache.addEventListener('click', function(e){
-
+           buddy.src=`https://share.sketchpad.app/24/781-012f-d84cd2.png `
             })
             none.addEventListener('click',function(e){
-
+                buddy.src=`https://share.sketchpad.app/24/f1f-c3e2-c32c64.png `
             })
             tophat.addEventListener('click', function(e){
-
+            buddy.src=`https://share.sketchpad.app/24/c3c-38cc-c1a0da.png `
             })
         })
         girly.addEventListener('click', function(e){
